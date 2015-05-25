@@ -1,0 +1,7 @@
+{% load i18n %}{% blocktrans %}
+Thanks for signing up for {{ current_site.name }}!  Please click the following link (or copy and paste into your browser's address bar):
+
+To confirm your email address, go to {{ activate_url }}
+
+If you did not sign up for this site, you can ignore this message.
+{% endblocktrans %}

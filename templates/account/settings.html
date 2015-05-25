@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block body_class %}account{% endblock %}
+
+{% block page_title %}{% trans "Account Settings" %}{% endblock %}
+
+{% block site_main %}
+  <section class="account__wrapper">
+    <h1 class="account__title">{% trans "Account Settings" %}</h1>
+    <form class="account__form" action="." method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" class="account__submit" value="{% trans "Save Settings" %}" />
+    </form>
+  </section>
+{% endblock %}
