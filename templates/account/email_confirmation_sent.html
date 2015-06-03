@@ -8,6 +8,8 @@
 {% block site_main %}
   <section class="account__wrapper">
     <h1 class="account__title">{% trans "Confirm your email address" %}</h1>
-    <p>{% blocktrans %}We have sent you an email to <b>{{ email }}</b> for verification. Follow the link provided to finalize the signup process. If you do not receive it within a few minutes, contact us.{% endblocktrans %}</p>
+    <p>{% blocktrans %}We have sent you an email to <strong>{{ email }}</strong> for verification.{% endblocktrans %}</p>
+    <p>{% blocktrans %}Follow the link provided to finalize the signup process.{% endblocktrans %}</p>
+    <p>{% blocktrans %}If you do not receive it within a few minutes, contact us.{% endblocktrans %}</p>
   </section>
 {% endblock %}
